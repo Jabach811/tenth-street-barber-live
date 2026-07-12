@@ -188,9 +188,14 @@
     .wedding-service figcaption > p { margin-bottom: 0; }
     .wedding-service-copy { max-width: 33rem; color: var(--paper-muted); font-size: 1.05rem; }
     .wedding-service-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; }
-    .about-grid { display: grid; gap: 2rem; }
+    .about-grid { display: grid; gap: 2.5rem; }
+    .about-story { display: grid; align-content: end; }
+    .about-story .section-number { margin-bottom: 1.5rem; }
     .about-copy { max-width: 20ch; margin: 0; font: 700 clamp(2rem, 8vw, 4.6rem)/1.08 var(--display); letter-spacing: -.025em; text-transform: uppercase; }
-    .about-detail { max-width: 32rem; margin: 0; color: var(--paper-muted); font-size: 1.05rem; }
+    .about-detail { max-width: 32rem; margin: 2rem 0 0; color: var(--paper-muted); font-size: 1.05rem; }
+    .about-portrait { margin: 0; }
+    .about-portrait img { width: 100%; height: auto; }
+    .about-portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; margin-top: .8rem; padding-top: .75rem; border-top: 1px solid var(--line-dark); color: var(--paper-muted); font-size: .67rem; text-transform: uppercase; letter-spacing: .12em; }
     .closing { position: relative; min-height: 100svh; display: flex; align-items: flex-end; overflow: hidden; background: #211d18; }
     .closing-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 52% center; }
     .closing::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.04) 28%, rgba(0,0,0,.9) 92%), linear-gradient(90deg, rgba(0,0,0,.5), transparent 70%); }
@@ -236,6 +241,10 @@
     .js.motion-ok [data-reveal] { opacity: 1; transform: translateY(1rem); transition: transform .65s cubic-bezier(.2,.7,.2,1); }
     .js.motion-ok [data-reveal].is-visible { opacity: 1; transform: none; }
 
+    @media (max-width: 699px) {
+      .closing-content > .pill { display: none; }
+      .closing-copy { margin-bottom: 0; }
+    }
     @media (min-width: 700px) {
       .desktop-nav { display: flex; }
       .hero-content { padding-bottom: 3rem; }
@@ -244,7 +253,7 @@
       .section-head { grid-template-columns: .6fr 1.5fr .8fr; align-items: end; }
       .service-row { grid-template-columns: 1.5fr auto minmax(11rem, .45fr); align-items: center; padding: 1.7rem 0; }
       .confirm, .service-note { grid-column: auto; text-align: right; }
-      .about-grid { grid-template-columns: 1.4fr .6fr; align-items: end; gap: 4rem; }
+      .about-grid { grid-template-columns: minmax(0, 1fr) minmax(18rem, .72fr); align-items: end; gap: clamp(3rem, 8vw, 8rem); }
       .wedding-service { grid-template-columns: minmax(0, .75fr) minmax(15rem, .5fr); align-items: start; }
       .closing { min-height: min(82rem, 100svh); }
       .closing-image { object-position: center 18%; }
@@ -335,12 +344,16 @@
 
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="about-grid">
-        <div data-reveal>
+        <div class="about-story" data-reveal>
           <p class="section-number" data-number="03">About</p>
           <h2 class="sr-only" id="about-title">About Shevy</h2>
           <p class="about-copy">One chair means the appointment is yours.</p>
+          <p class="about-detail">Shevy runs a solo studio built around focused work and personal service. No assembly line and no rushing the finish—just the time, conversation, and detail your cut needs. Book direct and the chair is waiting for you.</p>
         </div>
-        <p class="about-detail" data-reveal>Shevy runs a solo studio built around focused work and personal service. No assembly line and no rushing the finish—just the time, conversation, and detail your cut needs. Book direct and the chair is waiting for you.</p>
+        <figure class="about-portrait" data-reveal>
+          <img src="assets/source/instagram/shevy-grid-01.jpg" width="1440" height="1800" loading="lazy" alt="Black-and-white portrait of Shevy wearing a baseball cap with his arms crossed">
+          <figcaption><span>Shevy the Barberian</span><span>Tracy, California</span></figcaption>
+        </figure>
       </div>
     </section>
 
