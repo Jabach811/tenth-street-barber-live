@@ -3,97 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tenth Street Barber Co. in Tracy, California. Meet the team and book your next service.">
-  <meta name="theme-color" content="#171512">
-  <title>Tenth Street Barber Co. | Tracy, CA</title>
+  <meta name="description" content="Tenth Street Barber Co. in downtown Tracy, California. Good cuts, good music, and a crew that treats the shop like family.">
+  <meta name="theme-color" content="#11100f">
+  <title>Tenth Street Barber Co. | Downtown Tracy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,600&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop-first.css">
 </head>
 <body>
-  <a class="skip-link" href="#team">Skip to the team</a>
-  <header class="site-header wrap">
-    <a class="wordmark" href="./" aria-label="Tenth Street Barber Co. home">TENTH<span>STREET</span></a>
-    <a class="nav-link" href="#contact">Visit the shop</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Tenth Street Barber Co. home"><span>Tenth Street</span><small>Barber Co. · Tracy, CA</small></a>
+    <nav id="primary-nav" aria-label="Primary"><a href="#main-content">The shop</a><a href="#crew">Crew</a><a href="#work">Work</a><a href="#visit">Visit</a></nav>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+    <a class="header-book booking-link" href="https://getsquire.com/booking/brands/tenth-street-barber-co">Book the shop</a>
   </header>
 
-  <main>
-    <section class="hero wrap" aria-labelledby="page-title">
-      <p class="eyebrow">24 E 10th St · Tracy, California</p>
-      <h1 id="page-title">Good cuts.<br><em>Good company.</em></h1>
-      <p class="lede">A neighborhood shop built around the people in the chair and the barbers behind it.</p>
-      <div class="action-row">
-        <a class="button" href="https://getsquire.com/booking/brands/tenth-street-barber-co" target="_blank" rel="noreferrer">Book at Tenth Street</a>
-        <a class="text-link" href="#team">Meet the team <span aria-hidden="true">↓</span></a>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker">24 E 10th Street · Downtown Tracy</p>
+        <h1 id="hero-title">Tenth Street<br><span>Barber Co.</span></h1>
+        <div class="hero-bottom">
+          <p>Good music in the room, somebody stopping through, and a crew that makes the shop feel like family.</p>
+          <div class="actions">
+            <a class="button booking-link" href="https://getsquire.com/booking/brands/tenth-street-barber-co">Book at Tenth Street</a>
+            <a class="arrow-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=24+E+10th+St+Tracy+CA+95376">Get directions <span class="vector-arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="mock-assets/environment/hero-storefront-clean.png" alt="The Tenth Street Barber Co. storefront and employee lounge chairs" width="1536" height="1024">
+        <figcaption><span>The employee lounge</span><small>Pull up a chair. Stay a while.</small></figcaption>
+      </figure>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><p>Good cuts · Good music · Cold beverage · Good people · Downtown Tracy · Good cuts · Good music · Cold beverage · Good people · Downtown Tracy · Good cuts · Good music · Cold beverage · Good people · Downtown Tracy · Good cuts · Good music · Cold beverage · Good people · Downtown Tracy · </p></div>
+
+    <section class="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-title section-shell">
+        <p class="section-number">02 / Walk in</p>
+        <h2 id="welcome-title">Take a seat.<br>You’re family now.</h2>
+        <img src="mock-assets/environment/lounge-interior.png" alt="Warm documentary view across a neighborhood barbershop lounge and work floor" loading="lazy">
+      </div>
+      <div class="welcome-notes">
+        <article><img src="mock-assets/environment/drinks-fridge-closed.png" alt="Closed glass-door shop refrigerator stocked with cold water and sodas" loading="lazy"><span>01</span><h3>Something to drink?</h3><p>A beverage gets offered. The conversation starts before the cape goes on.</p></article>
+        <article><img src="mock-assets/environment/music-room.png" alt="Friends sharing music and conversation inside a neighborhood barbershop" loading="lazy"><span>02</span><h3>Good music, always.</h3><p>The soundtrack matters. So does laughing across the room while the work gets done.</p></article>
+        <article><img src="mock-assets/environment/welcome-arrival.png" alt="A customer arriving and receiving a casual greeting inside the shop" loading="lazy"><span>03</span><h3>People come through.</h3><p>Friends, families, and regulars move in and out. It feels alive because it is.</p></article>
       </div>
     </section>
 
-    <section class="section section-paper" id="team" aria-labelledby="team-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <p class="eyebrow">The chair is personal</p>
-          <h2 id="team-title">Find your barber.</h2>
-          <p>Each person keeps their own craft, booking rhythm, and point of view. Start with a profile, then book directly where available.</p>
-        </div>
-        <ul class="team-grid" role="list">
-          <li><a class="team-card" href="barbers/shevy-the-barberian/"><span class="card-number">01</span><strong>Shevy the Barberian</strong><span>Barber <b aria-hidden="true">↗</b></span></a></li>
-          <li><a class="team-card" href="barbers/greg-solario/"><span class="card-number">02</span><strong>Greg Solario</strong><span>Owner <b aria-hidden="true">↗</b></span></a></li>
-          <li><a class="team-card" href="barbers/javier-larios/"><span class="card-number">03</span><strong>Javier Larios</strong><span>Barber <b aria-hidden="true">↗</b></span></a></li>
-          <li><a class="team-card" href="barbers/mike-zeiger/"><span class="card-number">04</span><strong>Mike Zeiger</strong><span>Barber <b aria-hidden="true">↗</b></span></a></li>
-          <li><a class="team-card" href="barbers/robert-oshea/"><span class="card-number">05</span><strong>Robert O'Shea</strong><span>Barber <b aria-hidden="true">↗</b></span></a></li>
-          <li><a class="team-card" href="barbers/cdc-culture/"><span class="card-number">06</span><strong>Casa de Cortez</strong><span>Luxury grooming brand <b aria-hidden="true">↗</b></span></a></li>
-        </ul>
+    <section class="crew" id="crew" aria-labelledby="crew-title">
+      <div class="section-shell crew-heading">
+        <p class="section-number">03 / Meet the crew</p>
+        <div><h2 id="crew-title">Different hands.<br>One house.</h2><p class="crew-instruction">Pick a card to meet the crew. The people behind the chairs are what give Tenth Street its character.</p></div>
+      </div>
+      <div class="crew-grid">
+        <a class="crew-card" href="barbers/shevy-the-barberian/index.html" aria-label="View Shevy the Barberian profile">
+          <img src="mock-assets/crew/shevy.png" alt="Editorial portrait of Shevy the Barberian" loading="lazy">
+          <div class="crew-mask"><span>01</span></div><span class="crew-reveal" aria-hidden="true">Reveal</span>
+          <div class="crew-name"><strong>Shevy the Barberian</strong><small>View profile <span class="vector-arrow" aria-hidden="true"></span></small></div>
+        </a>
+        <a class="crew-card" href="barbers/greg-solario/index.html" aria-label="View Greg Solario profile">
+          <img src="mock-assets/crew/greg.png" alt="Editorial review portrait of Greg Solario" loading="lazy">
+          <div class="crew-mask"><span>02</span></div><span class="crew-reveal" aria-hidden="true">Reveal</span>
+          <div class="crew-name"><strong>Greg Solario</strong><small>View profile <span class="vector-arrow" aria-hidden="true"></span></small></div>
+        </a>
+        <a class="crew-card" href="barbers/javier-larios/index.html" aria-label="View Javier Larios profile">
+          <img src="mock-assets/crew/javier.png" alt="Editorial review portrait of Javier Larios" loading="lazy">
+          <div class="crew-mask"><span>03</span></div><span class="crew-reveal" aria-hidden="true">Reveal</span>
+          <div class="crew-name"><strong>Javier Larios</strong><small>View profile <span class="vector-arrow" aria-hidden="true"></span></small></div>
+        </a>
+        <a class="crew-card" href="barbers/mike-zeiger/index.html" aria-label="View Mike Zeiger profile">
+          <img src="mock-assets/crew/mike.png" alt="Editorial review portrait of Mike Zeiger" loading="lazy">
+          <div class="crew-mask"><span>04</span></div><span class="crew-reveal" aria-hidden="true">Reveal</span>
+          <div class="crew-name"><strong>Mike<br>Zeiger</strong><small>View profile <span class="vector-arrow" aria-hidden="true"></span></small></div>
+        </a>
+        <a class="crew-card" href="barbers/robert-oshea/index.html" aria-label="View Robert O'Shea profile">
+          <img src="mock-assets/crew/robert.png" alt="Editorial review portrait of Robert O'Shea" loading="lazy">
+          <div class="crew-mask"><span>05</span></div><span class="crew-reveal" aria-hidden="true">Reveal</span>
+          <div class="crew-name"><strong>Robert O'Shea</strong><small>View profile <span class="vector-arrow" aria-hidden="true"></span></small></div>
+        </a>
+        <a class="crew-card crew-card-brand" href="barbers/cdc-culture/index.html" aria-label="View Casa de Cortez profile">
+          <img src="mock-assets/crew/casa-de-cortez.png" alt="Casa de Cortez Luxury Grooming brand mark" loading="lazy">
+          <div class="crew-mask"><span>06</span></div><span class="crew-reveal" aria-hidden="true">Reveal</span>
+          <div class="crew-name"><strong>Casa de Cortez</strong><small>View profile <span class="vector-arrow" aria-hidden="true"></span></small></div>
+        </a>
+      </div>
+      <div class="crew-cta section-shell"><p>Not sure who to choose? Start with the shop and find the service and availability that fit.</p><a class="button booking-link" href="https://getsquire.com/booking/brands/tenth-street-barber-co">See availability</a></div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-intro"><p class="section-number">04 / The work</p><h2 id="work-title">Details from<br>every angle.</h2><p>Modern fades, classic shape, beard work, hot towel shaves, and straight razor line-ups—built around the person in the chair.</p></div>
+      <div class="work-sheet">
+        <figure class="work-shot work-shot-a"><img src="barbers/shevy-the-barberian/assets/source/booksy-05.jpg" alt="Clean skin fade with a precise lineup" width="640" height="360" loading="lazy"><figcaption>Fade / Lineup <span>01</span></figcaption></figure>
+        <figure class="work-shot work-shot-b"><img src="barbers/shevy-the-barberian/assets/source/booksy-01.jpg" alt="Neatly styled classic haircut" width="640" height="360" loading="lazy"><figcaption>Scissor / Shape <span>02</span></figcaption></figure>
+        <figure class="work-shot work-shot-c"><img src="barbers/shevy-the-barberian/assets/source/booksy-09.jpg" alt="Blended taper with textured styling" width="640" height="360" loading="lazy"><figcaption>Taper / Texture <span>03</span></figcaption></figure>
+        <figure class="work-shot work-shot-d"><img src="barbers/shevy-the-barberian/assets/source/booksy-03.jpg" alt="Detailed haircut photographed from the side" width="640" height="360" loading="lazy"><figcaption>Finish / Detail <span>04</span></figcaption></figure>
       </div>
     </section>
 
-    <section class="section mock-section" id="mock-pages" aria-labelledby="mock-pages-title">
-      <div class="wrap">
-        <div class="mock-heading">
-          <p class="eyebrow">Private design previews</p>
-          <h2 id="mock-pages-title">Five people.<br>Five directions.</h2>
-          <p>Each concept is built around a different point of view. Open a page, feel it out, and decide what fits.</p>
-        </div>
-        <div class="mock-grid">
-          <article class="mock-card mock-greg"><span>01 · Owner's Ledger</span><strong>Greg<br>Solario</strong><small>Classic · Composed · Established</small><div class="mock-actions"><a href="barbers/greg-solario/">Full profile</a><a href="barbers/greg-solario/mock.html">Original mock</a></div></article>
-          <article class="mock-card mock-javier"><span>02 · Precision Grid</span><strong>Javier<br>Larios</strong><small>Technical · Crisp · Modern</small><div class="mock-actions"><a href="barbers/javier-larios/">Full profile</a><a href="barbers/javier-larios/mock.html">Original mock</a></div></article>
-          <article class="mock-card mock-mike"><span>03 · Beards / Blades / Fades</span><strong>Mike<br>Zeiger</strong><small>Rugged · Tactile · Easygoing</small><div class="mock-actions"><a href="barbers/mike-zeiger/">Full profile</a><a href="barbers/mike-zeiger/mock.html">Original mock</a></div></article>
-          <article class="mock-card mock-robert"><span>04 · Blended Culture</span><strong>Robert<br>O'Shea</strong><small>Layered · Expressive · Editorial</small><div class="mock-actions"><a href="barbers/robert-oshea/">Full profile</a><a href="barbers/robert-oshea/mock.html">Original mock</a></div></article>
-          <article class="mock-card mock-cdc"><span>05 · Luxury Grooming</span><strong>Casa de<br>Cortez</strong><small>Black · Gold · Considered</small><div class="mock-actions"><a href="barbers/cdc-culture/">Full profile</a><a href="barbers/cdc-culture/mock.html">Original mock</a></div></article>
-        </div>
-      </div>
+    <section class="services section-shell" id="services" aria-labelledby="services-title">
+      <div class="section-intro"><p class="section-number">05 / At the chair</p><h2 id="services-title">The essentials,<br>handled right.</h2></div>
+      <ol class="service-list">
+        <li><span>01</span><strong>Haircuts</strong><small>Classic and modern cuts shaped to you</small></li>
+        <li><span>02</span><strong>Beard trims &amp; beard sculpting</strong><small>Shape, balance, and clean detail</small></li>
+        <li><span>03</span><strong>Hot towel shaves</strong><small>A traditional finish with time built in</small></li>
+        <li><span>04</span><strong>Straight razor line-ups</strong><small>Sharp edges and a finished look</small></li>
+      </ol>
     </section>
 
-    <section class="section wrap services" aria-labelledby="services-title">
-      <div class="section-heading">
-        <p class="eyebrow">At the shop</p>
-        <h2 id="services-title">Clean work,<br>done right.</h2>
-      </div>
-      <ul class="service-list" role="list">
-        <li>Haircuts</li>
-        <li>Beard trims &amp; sculpting</li>
-        <li>Hot towel shaves</li>
-        <li>Straight razor line-ups</li>
-      </ul>
-    </section>
-
-    <section class="section section-brass" id="contact" aria-labelledby="visit-title">
-      <div class="wrap visit-grid">
-        <div>
-          <p class="eyebrow">Come through</p>
-          <h2 id="visit-title">Tenth Street<br>Barber Co.</h2>
-          <a class="button button-dark" href="tel:+12098345211">Call 209-834-5211</a>
-        </div>
-        <div class="visit-details">
-          <p><strong>24 E 10th St</strong><br>Tracy, CA 95376</p>
-          <p>Monday: Closed<br>Tuesday-Friday: 10:00 am - 7:00 pm<br>Saturday: 9:00 am - 3:00 pm<br>Sunday: Closed</p>
-          <a class="text-link" href="https://barbershoptracyca.com" target="_blank" rel="noreferrer">Shop website <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="visit-title-block"><img src="mock-assets/environment/empty-chair.png" alt="One empty barber chair waiting inside the shop" loading="lazy"><div><p class="section-number">06 / Come through</p><h2 id="visit-title">Your chair<br>is waiting.</h2></div></div>
+      <a class="visit-book booking-link" href="https://getsquire.com/booking/brands/tenth-street-barber-co"><span>Book your cut</span><span class="vector-arrow vector-arrow-large" aria-hidden="true"></span></a>
     </section>
   </main>
 
-  <footer class="site-footer wrap"><p>© Tenth Street Barber Co.</p><a href="#team">Back to team ↑</a></footer>
-  <script src="script.js"></script>
+  <footer class="photo-footer"><img src="mock-assets/environment/footer-street.png" alt="Soft-focus evening scene outside Tenth Street Barber Co." loading="lazy"><div class="footer-content"><p class="section-number">Downtown Tracy · Come through</p><h2>Tenth Street<br>Barber Co.</h2><div class="footer-details"><p><strong>Find us</strong>24 E 10th St<br>Tracy, CA 95376</p><p><strong>Hours</strong>Tue–Fri / 10am–7pm<br>Sat / 9am–3pm<br>Sun–Mon / Closed</p></div><div class="footer-actions"><a class="button booking-link" href="https://getsquire.com/booking/brands/tenth-street-barber-co">Book the shop</a><a href="tel:+12098345211">209-834-5211</a><a href="https://www.google.com/maps/dir/?api=1&amp;destination=24+E+10th+St+Tracy+CA+95376">Directions <span class="vector-arrow" aria-hidden="true"></span></a></div><small>© Tenth Street Barber Co.</small></div></footer>
+  <a class="mobile-booking booking-link" href="https://getsquire.com/booking/brands/tenth-street-barber-co">Book the shop <span class="vector-arrow" aria-hidden="true"></span></a>
+  <script src="shop-first.js"></script>
 </body>
 </html>
