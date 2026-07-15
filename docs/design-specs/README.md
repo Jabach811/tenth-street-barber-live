@@ -1,15 +1,15 @@
 # Tenth Street Barber Co. — Design Direction Specs
 
-Three approved design directions for the site. **Classic Americana is the one built and live
-in this repo today** (`index.html` + `barbers/*/index.html`, styled by `assets/site.css`).
-The other two are fully specified here so a future build — for the whole site or for a single
-barber's page — can pick a different lane without starting from zero.
+Three approved design directions for the site. **Dark Editorial is built on the
+`codex/dark-editorial` branch** (`index.html` + `barbers/*/index.html`, styled by
+`assets/site.css`). Classic Americana remains on the prior branch and Warm Neighborhood
+remains specified for a future build.
 
 | # | Direction | Status | Spec |
 |---|-----------|--------|------|
-| 1 | Classic Americana | **Built — live** | [01-classic-americana.md](01-classic-americana.md) |
+| 1 | Classic Americana | Built on prior branch | [01-classic-americana.md](01-classic-americana.md) |
 | 2 | Warm Neighborhood | Spec only | [02-neighborhood-warm.md](02-neighborhood-warm.md) |
-| 3 | Dark Editorial | Spec only | [03-dark-editorial.md](03-dark-editorial.md) |
+| 3 | Dark Editorial | **Built on `codex/dark-editorial`** | [03-dark-editorial.md](03-dark-editorial.md) |
 
 ## How the barber pages work
 

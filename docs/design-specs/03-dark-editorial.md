@@ -1,6 +1,6 @@
 # Direction 3 — Dark Editorial (SPEC)
 
-**Status: spec only.** The premium magazine direction — what the previous individual barber
+**Status: built on `codex/dark-editorial`.** The premium magazine direction — what the previous individual barber
 pages (Javier's precision grid, CDC's luxury spread, Shevy's studio page) were each reaching
 for, unified into one coherent system.
 
